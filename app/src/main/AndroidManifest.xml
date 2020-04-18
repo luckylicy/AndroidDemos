@@ -33,6 +33,10 @@
         <activity android:name=".ui.TestActivity" />
         <activity android:name=".ui.IntentTestActivity" />
         <activity android:name=".ui.IntentTestSecondActivity" />
+        <activity android:name=".ui.TimeDealActivity" />
+        <activity android:name=".ui.ServiceTestActivity" />
+
+        <service android:name=".service.MusicService" />
     </application>
 
 </manifest>

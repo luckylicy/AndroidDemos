@@ -19,6 +19,7 @@ import java.util.List;
 
 import app.licy.open.androiddemos.ui.IntentTestActivity;
 import app.licy.open.androiddemos.ui.PermissionTestActivity;
+import app.licy.open.androiddemos.ui.ServiceTestActivity;
 import app.licy.open.androiddemos.ui.TestActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mTitles.add("权限控制");
         mTitles.add("测试");
         mTitles.add("Intent测试");
+        mTitles.add("IntentService测试");
 
         mMyAdapter = new MyAdapter(mTitles, mContext);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
@@ -65,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         // 权限控制
                         startActivity(new Intent(mContext, IntentTestActivity.class));
+                        break;
+                    case 3:
+                        // 权限控制
+                        startActivity(new Intent(mContext, ServiceTestActivity.class));
                         break;
                     default:
                         break;
