@@ -1,6 +1,5 @@
 package app.licy.open.androiddemos;
 
-import androidx.annotation.ContentView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +16,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.licy.open.androiddemos.ui.ImageScaleTypeActivity;
+import app.licy.open.androiddemos.ui.TimeDealActivity;
+import app.licy.open.androiddemos.ui.arouter.TestARouterActivity;
 import app.licy.open.androiddemos.ui.IntentTestActivity;
 import app.licy.open.androiddemos.ui.PermissionTestActivity;
 import app.licy.open.androiddemos.ui.ServiceTestActivity;
@@ -47,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         mTitles.add("测试");
         mTitles.add("Intent测试");
         mTitles.add("IntentService测试");
+        mTitles.add("ARouter测试");
+        mTitles.add("SimpleDateFormat测试");
+        mTitles.add("ImageView");
 
         mMyAdapter = new MyAdapter(mTitles, mContext);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
@@ -71,6 +76,18 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         // 权限控制
                         startActivity(new Intent(mContext, ServiceTestActivity.class));
+                        break;
+                    case 4:
+                        // ARouter测试
+                        startActivity(new Intent(mContext, TestARouterActivity.class));
+                        break;
+                    case 5:
+                        // ARouter测试
+                        startActivity(new Intent(mContext, TimeDealActivity.class));
+                        break;
+                    case 6:
+                        // ARouter测试
+                        startActivity(new Intent(mContext, ImageScaleTypeActivity.class));
                         break;
                     default:
                         break;
