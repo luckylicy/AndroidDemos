@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import app.licy.open.androiddemos.ui.ImageScaleTypeActivity;
+import app.licy.open.androiddemos.ui.ScrollViewAndWebViewActivity;
 import app.licy.open.androiddemos.ui.TimeDealActivity;
 import app.licy.open.androiddemos.ui.arouter.TestARouterActivity;
 import app.licy.open.androiddemos.ui.IntentTestActivity;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mTitles.add("ARouter测试");
         mTitles.add("SimpleDateFormat测试");
         mTitles.add("ImageView");
+        mTitles.add("ScrollView And WebView");
 
         mMyAdapter = new MyAdapter(mTitles, mContext);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext));
@@ -88,6 +90,10 @@ public class MainActivity extends AppCompatActivity {
                     case 6:
                         // ARouter测试
                         startActivity(new Intent(mContext, ImageScaleTypeActivity.class));
+                        break;
+                    case 7:
+                        // ARouter测试
+                        startActivity(new Intent(mContext, ScrollViewAndWebViewActivity.class));
                         break;
                     default:
                         break;

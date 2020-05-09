@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".app.MyApp"
@@ -39,6 +39,7 @@
         <activity android:name=".ui.arouter.TestARouterActivity" />
         <activity android:name=".ui.ImageScaleTypeActivity" />
         <activity android:name=".ui.LinearLayoutTestActivity" />
+        <activity android:name=".ui.ScrollViewAndWebViewActivity" />
 
         <service android:name=".service.MusicService" />
     </application>
